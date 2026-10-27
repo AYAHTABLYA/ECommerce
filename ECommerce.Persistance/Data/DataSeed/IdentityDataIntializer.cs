@@ -27,44 +27,55 @@ namespace ECommerce.Persistance.Data.DataSeed
         }
 
 
+
         public async Task InitializeAsync()
         {
             try
             {
-                if (!_roleManager.Roles.Any())
+                if (!await _roleManager.RoleExistsAsync("Admin"))
                 {
                     await _roleManager.CreateAsync(new IdentityRole("Admin"));
+                }
+
+                if (!await _roleManager.RoleExistsAsync("SuperAdmin"))
+                {
                     await _roleManager.CreateAsync(new IdentityRole("SuperAdmin"));
                 }
 
-                if (!_userManager.Users.Any())
+                var user = await _userManager.FindByNameAsync("AyahTablya");
+
+                if (user == null)
                 {
-                    var User01 = new ApplicationUser
+                    user = new ApplicationUser
                     {
-                        DisplayName = "Nourhan Taha",
-                        UserName = "Nourhan",
-                        Email = "norhantaha43@gmail.com",
-                        PhoneNumber = "01276545805",
-                    };
-                    var User02 = new ApplicationUser
-                    {
-                        DisplayName = "Menna Ahmed",
-                        UserName = "Menna",
-                        Email = "Menna@gmail.com",
-                        PhoneNumber = "01111111111",
+                        DisplayName = "Ayah Tablya",
+                        UserName = "AyahTablya",
+                        Email = "ayahtarek2019@gmail.com",
+                        PhoneNumber = "01000250943"
                     };
 
-                    await _userManager.CreateAsync(User01, "Nourhan@1234");
-                    await _userManager.CreateAsync(User02, "Menna@1234");
+                    var result = await _userManager.CreateAsync(user, "Ayah@1234");
 
-                    await _userManager.AddToRoleAsync(User01, "SuperAdmin");
-                    await _userManager.AddToRoleAsync(User02, "Admin");
-                } 
+                    if (!result.Succeeded)
+                    {
+                        _logger.LogError(
+                            "Failed to create Ayah: {Errors}",
+                            string.Join(", ", result.Errors.Select(e => e.Description)));
+                        return;
+                    }
+                }
+
+                if (!await _userManager.IsInRoleAsync(user, "SuperAdmin"))
+                {
+                    await _userManager.AddToRoleAsync(user, "SuperAdmin");
+                }
             }
             catch (Exception ex)
             {
-                _logger.LogError($"An error occurred while seeding identity data : {ex.Message}");
+                _logger.LogError(ex, "An error occurred while seeding identity data.");
             }
         }
+
     }
+
 }
