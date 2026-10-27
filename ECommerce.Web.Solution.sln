@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Web", "ECommerce.Web\ECommerce.Web.csproj", "{5DCA0070-1E61-40ED-A514-2774E95E0883}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationCoreLayer", "ApplicationCoreLayer", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InfrastructureLayer", "InfrastructureLayer", "{CF235270-E5C0-4528-AE75-6CD83CFFB15E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationLayer", "PresentationLayer", "{B55AD2DF-2791-470D-A263-C73F64EFB85F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Shared", "ECommerce.Shared\ECommerce.Shared.csproj", "{40898AEC-C2BD-4ECD-B637-23A9AAE1F1A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Domain", "ECommerce.Domain\ECommerce.Domain.csproj", "{C0C6BADB-4F71-4F9F-AECF-1DF6FEA0EB89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.ServicesAbstarction", "ECommerce.ServicesAbstarction\ECommerce.ServicesAbstarction.csproj", "{095FA41A-CB09-4C59-B9F7-7F7A71FB9341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Services", "ECommerce.Services\ECommerce.Services.csproj", "{EAD98F06-EFFB-4F8F-A6AC-4F86CB9481EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Persistance", "ECommerce.Persistance\ECommerce.Persistance.csproj", "{11E4FD38-60A2-4152-B342-5E82CC05344F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Presentation", "ECommerce.Presentation\ECommerce.Presentation.csproj", "{66F0B435-9550-44C2-B931-E89BF45AA1AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UiLayer", "UiLayer", "{A083C7DB-A61C-4FB7-802F-04F74B8AAD1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdminDashboard", "AdminDashboard", "{C17C56B6-D832-4B4E-A580-BD02C97F74A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Admin.Dashboard", "Admin.Dashboard\Admin.Dashboard.csproj", "{8BA81B13-DC9C-422C-B745-C35D2F8F56FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DCA0070-1E61-40ED-A514-2774E95E0883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DCA0070-1E61-40ED-A514-2774E95E0883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DCA0070-1E61-40ED-A514-2774E95E0883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DCA0070-1E61-40ED-A514-2774E95E0883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40898AEC-C2BD-4ECD-B637-23A9AAE1F1A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40898AEC-C2BD-4ECD-B637-23A9AAE1F1A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40898AEC-C2BD-4ECD-B637-23A9AAE1F1A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40898AEC-C2BD-4ECD-B637-23A9AAE1F1A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C6BADB-4F71-4F9F-AECF-1DF6FEA0EB89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C6BADB-4F71-4F9F-AECF-1DF6FEA0EB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C6BADB-4F71-4F9F-AECF-1DF6FEA0EB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C6BADB-4F71-4F9F-AECF-1DF6FEA0EB89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{095FA41A-CB09-4C59-B9F7-7F7A71FB9341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{095FA41A-CB09-4C59-B9F7-7F7A71FB9341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{095FA41A-CB09-4C59-B9F7-7F7A71FB9341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{095FA41A-CB09-4C59-B9F7-7F7A71FB9341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD98F06-EFFB-4F8F-A6AC-4F86CB9481EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD98F06-EFFB-4F8F-A6AC-4F86CB9481EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD98F06-EFFB-4F8F-A6AC-4F86CB9481EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD98F06-EFFB-4F8F-A6AC-4F86CB9481EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11E4FD38-60A2-4152-B342-5E82CC05344F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11E4FD38-60A2-4152-B342-5E82CC05344F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11E4FD38-60A2-4152-B342-5E82CC05344F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11E4FD38-60A2-4152-B342-5E82CC05344F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66F0B435-9550-44C2-B931-E89BF45AA1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66F0B435-9550-44C2-B931-E89BF45AA1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66F0B435-9550-44C2-B931-E89BF45AA1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66F0B435-9550-44C2-B931-E89BF45AA1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA81B13-DC9C-422C-B745-C35D2F8F56FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA81B13-DC9C-422C-B745-C35D2F8F56FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA81B13-DC9C-422C-B745-C35D2F8F56FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA81B13-DC9C-422C-B745-C35D2F8F56FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5DCA0070-1E61-40ED-A514-2774E95E0883} = {B55AD2DF-2791-470D-A263-C73F64EFB85F}
+		{C0C6BADB-4F71-4F9F-AECF-1DF6FEA0EB89} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{095FA41A-CB09-4C59-B9F7-7F7A71FB9341} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{EAD98F06-EFFB-4F8F-A6AC-4F86CB9481EA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{11E4FD38-60A2-4152-B342-5E82CC05344F} = {CF235270-E5C0-4528-AE75-6CD83CFFB15E}
+		{66F0B435-9550-44C2-B931-E89BF45AA1AF} = {B55AD2DF-2791-470D-A263-C73F64EFB85F}
+		{C17C56B6-D832-4B4E-A580-BD02C97F74A6} = {A083C7DB-A61C-4FB7-802F-04F74B8AAD1D}
+		{8BA81B13-DC9C-422C-B745-C35D2F8F56FA} = {C17C56B6-D832-4B4E-A580-BD02C97F74A6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F37DE74-EB6A-4985-8903-AE10A46C86A8}
+	EndGlobalSection
+EndGlobal
